@@ -1,0 +1,11 @@
+---
+description: How agents should scaffold new apps from the template
+alwaysApply: false
+---
+
+When asked to scaffold a new app:
+
+1. Copy `templates/nextjs/` into `apps/<app-name>/`.
+2. Update the package name, page copy, and metadata for the new app.
+3. Run `npm install` and `npm run build` in the new app.
+4. Keep the starter app deployable on Vercel without additional infrastructure.

@@ -1,0 +1,12 @@
+---
+description: How agents should handle Vercel deployments
+alwaysApply: false
+---
+
+For Vercel deployments:
+
+- prefer non-interactive commands
+- pass `--yes` for automation
+- pass the correct Vercel scope when required
+- verify the resulting URL responds after deployment
+- clean up temporary projects created only for validation

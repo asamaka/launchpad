@@ -1,0 +1,11 @@
+apps/*
+!apps/.gitkeep
+node_modules/
+.next/
+out/
+dist/
+.env*
+.DS_Store
+
+# npm logs
+npm-debug.log*
