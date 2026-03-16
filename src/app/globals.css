@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-50: #fdf8ed;
+  --color-gold-100: #f9edcf;
+  --color-gold-200: #f3d99b;
+  --color-gold-300: #ecc267;
+  --color-gold-400: #e6ab3c;
+  --color-gold-500: #d4912a;
+  --color-gold-600: #b87220;
+  --color-gold-700: #99541d;
+  --color-gold-800: #7d431f;
+  --color-gold-900: #68381e;
+
+  --color-midnight-50: #f0f2f8;
+  --color-midnight-100: #dde1ef;
+  --color-midnight-200: #c1c8e1;
+  --color-midnight-300: #97a1cd;
+  --color-midnight-400: #7280b8;
+  --color-midnight-500: #5362a4;
+  --color-midnight-600: #434e8a;
+  --color-midnight-700: #3a4270;
+  --color-midnight-800: #33395e;
+  --color-midnight-900: #1a1d33;
+  --color-midnight-950: #0d0f1a;
+
+  --font-heading: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-midnight-950);
+    color: white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background: linear-gradient(135deg, var(--color-gold-500), var(--color-gold-400));
+    color: var(--color-midnight-950);
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, var(--color-gold-400), var(--color-gold-300));
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(212, 145, 42, 0.3);
+  }
+
+  .btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+  }
+
+  .input-field {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    width: 100%;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+  }
+
+  .input-field:focus {
+    outline: none;
+    border-color: var(--color-gold-500);
+    box-shadow: 0 0 0 3px rgba(212, 145, 42, 0.15);
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .input-field::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .select-field {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    width: 100%;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  .select-field:focus {
+    outline: none;
+    border-color: var(--color-gold-500);
+    box-shadow: 0 0 0 3px rgba(212, 145, 42, 0.15);
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .select-field option {
+    background: #1a1d33;
+    color: white;
+  }
+}
