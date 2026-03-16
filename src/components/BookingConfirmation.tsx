@@ -9,10 +9,7 @@ import {
   PawPrint,
   Calendar,
   Clock,
-  Navigation,
   CheckCircle2,
-  Phone,
-  Download,
 } from "lucide-react";
 import { formatPrice, formatDuration, getRouteInfo, type BookingDetails } from "@/lib/data";
 import { getUser } from "@/lib/auth";

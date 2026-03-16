@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import BookingForm from "@/components/BookingForm";
@@ -15,7 +15,6 @@ export default function Home() {
   const [loginOpen, setLoginOpen] = useState(false);
   const [booking, setBooking] = useState<BookingDetails | null>(null);
   const [loginCallback, setLoginCallback] = useState<(() => void) | null>(null);
-  const bookingRef = useRef<HTMLDivElement>(null);
 
   const scrollToBooking = () => {
     document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
