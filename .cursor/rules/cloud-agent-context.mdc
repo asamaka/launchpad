@@ -1,0 +1,16 @@
+---
+description: Shared context for Cursor Cloud Agents working in launchpad
+alwaysApply: true
+---
+
+You are working inside the `asamaka/launchpad` repository.
+
+Goals:
+- scaffold and iterate on web apps under `apps/`
+- reuse `templates/nextjs/` as the baseline starter
+- keep deployments compatible with Vercel
+
+Conventions:
+- prefer small, reviewable commits
+- preserve the shared template unless the task explicitly requires changing it
+- keep generated application code in `apps/<app-name>`
