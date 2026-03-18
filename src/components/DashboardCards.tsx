@@ -205,7 +205,7 @@ function QuoteContent({ content, accent }: { content: CardContent; accent: strin
   const a = getAccent(accent);
   return (
     <div>
-      <div className={`border-l-3 ${a.border} pl-4`}>
+      <div className={`border-l-[3px] ${a.border} pl-4`}>
         <p className="text-text-secondary text-sm italic leading-relaxed">
           &ldquo;{content.quote}&rdquo;
         </p>
